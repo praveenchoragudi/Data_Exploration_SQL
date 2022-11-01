@@ -1,19 +1,19 @@
 # Data Exploration using SQL
 
-The goal of this project is to deep dive into historic data of COVID 19 deaths and vaccines using SQL and get valuable insights out of it.
+ The goal of this project is to deep dive into historic data of COVID 19 deaths and vaccines using SQL and get valuable insights out of it.
 Data exploration is the first step of data analysis used to explore and visualize data to uncover insights from the start or identify areas or patterns to dig into more. Using interactive dashboards and point-and-click data exploration, users can better understand the bigger picture and get to insights faster. 
 
-SQL is the language used to interact with relational databases. Since most systems today capture the data using one or more databases (like MySQL, Oracle, Redshift, SQL Server, etc.), we wanted to take advantage of  SQL to extract data from these systems and then work with it. The postgreSQL was used in this exploration.
+ SQL is the language used to interact with relational databases. Since most systems today capture the data using one or more databases (like MySQL, Oracle, Redshift, SQL Server, etc.), we wanted to take advantage of  SQL to extract data from these systems and then work with it. The postgreSQL was used in this exploration.
 
 ## Approach
 
  Our data analysis method begins with exploratory data analysis (EDA). Making sense of the data we have at this point will help us choose what questions to ask, how to frame them, and the best way to use the data we have to our advantage in order to obtain the answers we require. We accomplish this by taking a comprehensive look at patterns, trends, outliers, unexpected outcomes, and other features in our data and utilising quantitative and visual tools to understand the story it tells. We're seeking for hints that point to our logical next actions, inquiries, or study areas.
  
  ## Data Preparation
-We have data sourced from [here](https://ourworldindata.org/covid-deaths) where it provides data on the number of confirmed deaths from COVID-19. For the initial arrangement of the data we have downloaded the csv files and set them up as required using spreadsheet software. The two files we initially sourced are 'CovidDeaths.csv' and 'CovidVaccinations.csv'.
+ We have data sourced from [here](https://ourworldindata.org/covid-deaths) where it provides data on the number of confirmed deaths from COVID-19. For the initial arrangement of the data we have downloaded the csv files and set them up as required using spreadsheet software. The two files we initially sourced are 'CovidDeaths.csv' and 'CovidVaccinations.csv'.
 
 ## Importing Datasets into database
-We have downloaded and installed *PostgreSQL* Open source PostgreSQL packages and installers from EDB. Select the appropriate platform you wish to run in this [website](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads). After the installation on our Computer, the preceding package installation will be combined with the installation of pgAdmin 4, a potent graphical user interface that makes the construction, upkeep, and usage of database objects simpler. Using this we will start the exploration process further.
+ We have downloaded and installed *PostgreSQL* Open source PostgreSQL packages and installers from EDB. Select the appropriate platform you wish to run in this [website](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads). After the installation on our Computer, the preceding package installation will be combined with the installation of pgAdmin 4, a potent graphical user interface that makes the construction, upkeep, and usage of database objects simpler. Using this we will start the exploration process further.
 
 * Creating a DATABASE in the postgreSQL server locally
 ```sql
@@ -35,7 +35,7 @@ Upon successful creation of database it will be listed along with the existing d
 
 * importing data into Postgres
 
-The COPY command can import data to Postgres if access to text, CSV, or binary format data. Since we have our datasets in CSV format let us use this. Initially we will create two tables before importing data from the csv files. The tables are to be created in line with the structure of the data we already have.
+ The `COPY` command can import data to Postgres if access to text, CSV, or binary format data. Since we have our datasets in CSV format let us use this. Initially we will create two tables before importing data from the csv files. The tables are to be created in line with the structure of the data we already have.
 
 Creating table for storing deaths data with table name 'CovidDeaths'
 ```sql
@@ -130,5 +130,5 @@ TABLESPACE pg_default;
 ALTER TABLE IF EXISTS public."CovidVaccinations"
     OWNER to postgres;
 ```
-The tables are succesfully created and can be viewed under `CovidExplorations/Schemas/public/Tables` in *pgadmin4*
+ The tables are succesfully created and can be viewed under `CovidExplorations/Schemas/public/Tables` in *pgadmin4*
 
