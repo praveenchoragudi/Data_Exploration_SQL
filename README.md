@@ -148,10 +148,10 @@ The exploration was continued exactly in the below order which can be seen in th
 
 # Summary
 * Created Database Table Joins
-* Used Windows function to perform calculations on data
 * Created and queried views
 * Explored Real World Covid DataSets
-* Created Common table expression - CTE
 * Used Aggregate functions to return aggregated data
 * Performed data type conversions
 * Written SQL Queries to get answers from the database
+* Created Common table expression - CTE
+
