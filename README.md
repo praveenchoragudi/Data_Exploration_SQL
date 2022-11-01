@@ -132,7 +132,8 @@ ALTER TABLE IF EXISTS public."CovidVaccinations"
 ```
  The tables are succesfully created and can be viewed under `CovidExplorations/Schemas/public/Tables` in *pgadmin4*
 
-The exploration was continued exactly in the below order which can be seen in the <>
+The exploration was continued exactly in the below order which can be seen in the [.sql](https://github.com/praveenchoragudi/Data_Exploration_SQL/blob/main/CovidExplorations.sql) file
+
 * How many continents do we have data for
 * Possibility of dying from Covid
 * Percent of population infected with Covid
