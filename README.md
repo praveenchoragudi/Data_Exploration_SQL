@@ -132,3 +132,16 @@ ALTER TABLE IF EXISTS public."CovidVaccinations"
 ```
  The tables are succesfully created and can be viewed under `CovidExplorations/Schemas/public/Tables` in *pgadmin4*
 
+The exploration was continued exactly in the below order which can be seen in the <>
+* How many continents do we have data for
+* Possibility of dying from Covid
+* Percent of population infected with Covid
+* Countries with highest infection per population
+* Countries with highest deaths from COVID19
+* Continents with highest deaths from COVID19
+* Global Covid cases and death
+* Number of people vaccinated
+* Using CTE in postgreSQL Server
+* Using Temporary Tables in posrgreSQL Server
+* Using Views in postgreSQL Server
+
